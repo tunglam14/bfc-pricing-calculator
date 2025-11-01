@@ -1,0 +1,5 @@
+{
+  "subscription": 250000,
+  "requestsMillion": 12000,
+  "dataTransferOutboundGB": 280
+}

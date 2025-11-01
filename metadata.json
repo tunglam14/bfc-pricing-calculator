@@ -1,5 +1,5 @@
 {
-  "name": "Bizfly Cloud Cost Calculator",
+  "name": "Bizfly Cloud Cost Calculator w API",
   "description": "An interactive web application to estimate costs for various Bizfly Cloud services. Users can select and configure services like Cloud Server, Call Center, and Database, add them to an estimate, and export a summary PDF enhanced with an AI-generated overview.",
   "requestFramePermissions": []
 }

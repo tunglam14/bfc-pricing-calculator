@@ -1,27 +1,5 @@
 import React, { createContext, useState, useContext, useEffect, ReactNode } from 'react';
-
-export interface PricingData {
-  blockStorage: any;
-  businessEmail: any;
-  callCenter: any;
-  cloudServer: any;
-  cloudVps: any;
-  containerRegistry: any;
-  customImage: any;
-  database: any;
-  email: any;
-  kafka: any;
-  kubernetes: any;
-  lms: any;
-  loadBalancer: any;
-  simpleStorage: any;
-  snapshot: any;
-  wanIp: any;
-  backupSchedule: any;
-  cdn: any;
-  vpn: any;
-  waf: any;
-}
+import type { PricingData } from '../types';
 
 interface PricingContextType {
   pricing: PricingData | null;
@@ -44,7 +22,7 @@ export const PricingProvider: React.FC<{ children: ReactNode }> = ({ children })
     const loadPricingData = async () => {
       try {
         const responses = await Promise.all(
-          pricingFiles.map(file => fetch(`/pricing/${file}.json`))
+          pricingFiles.map(file => fetch(`/api/pricing/${file}.json`))
         );
         
         for (const res of responses) {

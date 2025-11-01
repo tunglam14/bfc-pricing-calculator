@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "outDir": "dist-server",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "target": "ES2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": false
+  },
+  "include": ["server.ts", "services/calculationService.ts", "types.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "dist-server",
+    "services/csvService.ts",
+    "services/pdfService.ts",
+    "services/geminiService.ts",
+    "contexts/**/*",
+    "components/**/*",
+    "i18n/**/*",
+    "*.tsx"
+  ]
+}

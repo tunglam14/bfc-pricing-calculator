@@ -51,6 +51,28 @@
     "per_hours": "for {hours} hours",
     "quantity": "Quantity"
   },
+  "api_docs": {
+    "title": "API Documentation",
+    "intro": "This documentation provides instructions on how to programmatically access pricing data and perform cost calculations using our provided APIs. This is ideal for integrating cost estimation into your own applications or backend services.",
+    "pricing_api_title": "Pricing Data API",
+    "pricing_api_desc": "To get the raw pricing data for each service, you can make a simple GET request to the corresponding static JSON endpoint. These endpoints do not require authentication.",
+    "base_url": "Base URL: [Your Application Domain]",
+    "endpoints_title": "Available Endpoints",
+    "calc_api_title": "Cost Calculation API",
+    "calc_api_desc": "For dynamic calculations, we recommend implementing a POST endpoint on your backend. This endpoint should accept a JSON object detailing the services to be estimated and return a calculated cost summary. The logic for this calculation is available in the `services/calculationService.ts` file of this application.",
+    "endpoint": "Endpoint",
+    "request_body": "Request Body",
+    "request_body_desc": "The request body should be a JSON object with the following structure:",
+    "response_body": "Response Body",
+    "response_body_desc": "A successful request will return a JSON object with the calculated totals:",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "service_details_title": "Service Details for Calculation",
+    "service_details_desc": "Below is a list of supported `id` values for the `items` array and the `options` object required for each service.",
+    "col_option": "Option",
+    "col_type": "Type",
+    "col_description": "Description"
+  },
   "cloud_server": {
     "title": "Cloud Server Calculator",
     "description": "Configure your virtual server specifications. Choose between high-performance AMD Gen 4 or versatile Intel Gen 2 chips, and attach external storage as needed.",

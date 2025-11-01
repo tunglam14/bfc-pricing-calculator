@@ -1,0 +1,5 @@
+{
+  "storagePricePerGBHour": 2.5,
+  "dataTransferPricePerGB": 280,
+  "hoursPerMonth": 720
+}

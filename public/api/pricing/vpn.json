@@ -1,0 +1,10 @@
+{
+  "packages": [
+    { "name": "50 Mbps", "price": 300000 },
+    { "name": "100 Mbps", "price": 600000 },
+    { "name": "200 Mbps", "price": 900000 },
+    { "name": "500 Mbps", "price": 6400000 },
+    { "name": "1 Gbps", "price": 12000000 }
+  ],
+  "dataTransferPricePerGB": 280
+}

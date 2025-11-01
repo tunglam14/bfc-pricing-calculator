@@ -1,0 +1,44 @@
+{
+  "subscription": {
+    "basic": {
+      "hdd": { "under100GB": 1091, "over100GB": 818 },
+      "ssd": { "under100GB": 3482, "over100GB": 3482 }
+    },
+    "premium": {
+      "hdd": { "under100GB": 2000, "over100GB": 1000 },
+      "ssd": { "under100GB": 7000, "over100GB": 4600 },
+      "nvme": { "under100GB": 10500, "over100GB": 6900 }
+    },
+    "enterprise": {
+      "hdd": { "under100GB": 2000, "over100GB": 1000 },
+      "ssd": { "under100GB": 7000, "over100GB": 4600 },
+      "nvme": { "under100GB": 10500, "over100GB": 6900 }
+    },
+    "dedicated": {
+      "hdd": { "under100GB": 2000, "over100GB": 1000 },
+      "ssd": { "under100GB": 7000, "over100GB": 4600 },
+      "nvme": { "under100GB": 10500, "over100GB": 6900 }
+    }
+  },
+  "onDemand": {
+    "basic": {
+      "hdd": { "under100GB": 2.0, "over100GB": 1.4 },
+      "ssd": { "under100GB": 6.2, "over100GB": 8.3 }
+    },
+    "premium": {
+      "hdd": { "under100GB": 3.6, "over100GB": 1.8 },
+      "ssd": { "under100GB": 12.6, "over100GB": 8.3 },
+      "nvme": { "under100GB": 19.0, "over100GB": 12.5 }
+    },
+    "enterprise": {
+      "hdd": { "under100GB": 3.6, "over100GB": 1.8 },
+      "ssd": { "under100GB": 12.6, "over100GB": 8.3 },
+      "nvme": { "under100GB": 19.0, "over100GB": 12.5 }
+    },
+    "dedicated": {
+      "hdd": { "under100GB": 3.6, "over100GB": 1.8 },
+      "ssd": { "under100GB": 12.6, "over100GB": 8.3 },
+      "nvme": { "under100GB": 19.0, "over100GB": 12.5 }
+    }
+  }
+}

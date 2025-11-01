@@ -1,0 +1,8 @@
+{
+  "packages": [
+    { "name": "Small", "connections": 1500, "freeDataTB": 5, "price": 500000 },
+    { "name": "Medium", "connections": 4000, "freeDataTB": 5, "price": 1760000 },
+    { "name": "Large", "connections": 8000, "freeDataTB": 5, "price": 3550000 }
+  ],
+  "dataTransferOveragePricePerGB": 280
+}

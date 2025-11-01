@@ -1,0 +1,12 @@
+{
+  "shared": {
+    "pricePerEmail": 3.5
+  },
+  "dedicated": [
+    { "name": "ET20", "emailsPerDay": 20000, "price": 900000 },
+    { "name": "ET40", "emailsPerDay": 40000, "price": 1800000 },
+    { "name": "ET60", "emailsPerDay": 60000, "price": 2640000 },
+    { "name": "ET80", "emailsPerDay": 80000, "price": 3600000 },
+    { "name": "ET100", "emailsPerDay": 100000, "price": 4500000 }
+  ]
+}
