@@ -1,0 +1,21 @@
+{
+    "packages": [
+        { "name": "Pack 10 CCU", "ccu": 10, "freeStorageGB": 5, "price": 1380000 },
+        { "name": "Pack 30 CCU", "ccu": 30, "freeStorageGB": 15, "price": 3280000 },
+        { "name": "Pack 50 CCU", "ccu": 50, "freeStorageGB": 20, "price": 4850000 },
+        { "name": "Pack 100 CCU", "ccu": 100, "freeStorageGB": 50, "price": 7750000 },
+        { "name": "Pack 200 CCU", "ccu": 200, "freeStorageGB": 100, "price": 11500000 },
+        { "name": "Pack 300 CCU", "ccu": 300, "freeStorageGB": 150, "price": 15300000 },
+        { "name": "Pack 400 CCU", "ccu": 400, "freeStorageGB": 200, "price": 19000000 },
+        { "name": "Pack 500 CCU", "ccu": 500, "freeStorageGB": 250, "price": 22850000 },
+        { "name": "Pack 600 CCU", "ccu": 600, "freeStorageGB": 300, "price": 26550000 },
+        { "name": "Pack 700 CCU", "ccu": 700, "freeStorageGB": 350, "price": 30300000 },
+        { "name": "Pack 800 CCU", "ccu": 800, "freeStorageGB": 400, "price": 34100000 },
+        { "name": "Pack 900 CCU", "ccu": 900, "freeStorageGB": 450, "price": 37850000 },
+        { "name": "Pack 1000 CCU", "ccu": 1000, "freeStorageGB": 500, "price": 41650000 }
+    ],
+    "additionalStorage": {
+        "blockSizeGB": 100,
+        "pricePerBlock": 800000
+    }
+}

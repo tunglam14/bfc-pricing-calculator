@@ -1,0 +1,20 @@
+{
+  "packages": [
+    { "id": 1, "storageGB": 10, "emailsPerDay": 2000, "price": 100000 },
+    { "id": 2, "storageGB": 30, "emailsPerDay": 2000, "price": 190000 },
+    { "id": 3, "storageGB": 50, "emailsPerDay": 2000, "price": 320000 },
+    { "id": 4, "storageGB": 150, "emailsPerDay": 5000, "price": 460000 },
+    { "id": 5, "storageGB": 300, "emailsPerDay": 10000, "price": 730000 },
+    { "id": 6, "storageGB": 500, "emailsPerDay": 10000, "price": 910000 },
+    { "id": 7, "storageGB": 1000, "emailsPerDay": 10000, "price": 1640000 },
+    { "id": 8, "storageGB": 2000, "emailsPerDay": 10000, "price": 3280000 },
+    { "id": 9, "storageGB": 3000, "emailsPerDay": 10000, "price": 5100000 },
+    { "id": 10, "storageGB": 4000, "emailsPerDay": 10000, "price": 7100000 },
+    { "id": 11, "storageGB": 5000, "emailsPerDay": 10000, "price": 10730000 },
+    { "id": 12, "storageGB": 6000, "emailsPerDay": 10000, "price": 15280000 },
+    { "id": 13, "storageGB": 7000, "emailsPerDay": 10000, "price": 19820000 },
+    { "id": 14, "storageGB": 8000, "emailsPerDay": 10000, "price": 24370000 },
+    { "id": 15, "storageGB": 9000, "emailsPerDay": 10000, "price": 28900000 },
+    { "id": 16, "storageGB": 10000, "emailsPerDay": 10000, "price": 33450000 }
+  ]
+}

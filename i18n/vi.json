@@ -51,6 +51,28 @@
     "per_hours": "cho {hours} giờ",
     "quantity": "Số lượng"
   },
+  "api_docs": {
+    "title": "Tài liệu API",
+    "intro": "Tài liệu này cung cấp hướng dẫn về cách truy cập dữ liệu giá và thực hiện tính toán chi phí một cách tự động thông qua API. Điều này lý tưởng cho việc tích hợp ước tính chi phí vào các ứng dụng hoặc dịch vụ backend của riêng bạn.",
+    "pricing_api_title": "API Dữ liệu Giá",
+    "pricing_api_desc": "Để lấy dữ liệu giá thô cho mỗi dịch vụ, bạn có thể thực hiện một yêu cầu GET đơn giản đến endpoint JSON tĩnh tương ứng. Các endpoint này không yêu cầu xác thực.",
+    "base_url": "URL cơ sở: [Miền ứng dụng của bạn]",
+    "endpoints_title": "Các Endpoint có sẵn",
+    "calc_api_title": "API Tính toán Chi phí",
+    "calc_api_desc": "Để tính toán động, chúng tôi khuyến nghị bạn triển khai một endpoint POST trên backend của mình. Endpoint này sẽ nhận một đối tượng JSON chi tiết về các dịch vụ cần ước tính và trả về một bản tóm tắt chi phí đã tính toán. Logic cho việc tính toán này có sẵn trong file `services/calculationService.ts` của ứng dụng này.",
+    "endpoint": "Endpoint",
+    "request_body": "Request Body",
+    "request_body_desc": "Request body phải là một đối tượng JSON có cấu trúc như sau:",
+    "response_body": "Response Body",
+    "response_body_desc": "Một yêu cầu thành công sẽ trả về một đối tượng JSON với tổng chi phí đã được tính toán:",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép!",
+    "service_details_title": "Chi tiết Dịch vụ cho Tính toán",
+    "service_details_desc": "Dưới đây là danh sách các giá trị `id` được hỗ trợ cho mảng `items` và đối tượng `options` cần thiết cho mỗi dịch vụ.",
+    "col_option": "Tùy chọn",
+    "col_type": "Kiểu dữ liệu",
+    "col_description": "Mô tả"
+  },
   "cloud_server": {
     "title": "Công cụ tính Cloud Server",
     "description": "Cấu hình thông số máy chủ ảo của bạn. Lựa chọn giữa chip AMD Gen 4 hiệu năng cao hoặc Intel Gen 2 đa dụng, và đính kèm ổ đĩa ngoài nếu cần.",

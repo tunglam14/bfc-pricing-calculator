@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "dist-server",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "target": "ES2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": false
+  },
+  "include": ["server.ts", "services/**/*.ts", "types.ts", "contexts/PricingContext.tsx"],
+  "exclude": ["node_modules", "dist"]
+}

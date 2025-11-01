@@ -1,0 +1,140 @@
+{
+  "amdGen4": {
+    "tiers": ["premium", "enterprise", "dedicated"],
+    "subscription": {
+      "premium": {
+        "cpu": [
+          { "cores": 1, "price": 140000 }, { "cores": 2, "price": 280000 }, { "cores": 3, "price": 420000 }, { "cores": 4, "price": 560000 }, { "cores": 5, "price": 700000 }, { "cores": 6, "price": 840000 }, { "cores": 8, "price": 1120000 }, { "cores": 10, "price": 1400000 }, { "cores": 12, "price": 1680000 }, { "cores": 16, "price": 2240000 }, { "cores": 18, "price": 2520000 }, { "cores": 24, "price": 3360000 }, { "cores": 32, "price": 4480000 }
+        ],
+        "ram": [
+          { "gb": 1, "price": 85000 }, { "gb": 2, "price": 170000 }, { "gb": 3, "price": 255000 }, { "gb": 4, "price": 340000 }, { "gb": 5, "price": 425000 }, { "gb": 6, "price": 510000 }, { "gb": 8, "price": 680000 }, { "gb": 10, "price": 850000 }, { "gb": 12, "price": 1020000 }, { "gb": 16, "price": 1360000 }, { "gb": 20, "price": 1700000 }, { "gb": 24, "price": 2040000 }, { "gb": 32, "price": 2720000 }, { "gb": 48, "price": 4080000 }, { "gb": 64, "price": 5440000 }, { "gb": 96, "price": 8160000 }, { "gb": 128, "price": 10880000 }
+        ],
+        "disk": { "hdd": { "under100GB": 2000, "over100GB": 1000 }, "ssd": { "under100GB": 7000, "over100GB": 4600 }, "nvme": { "under100GB": 10500, "over100GB": 6900 } }
+      },
+      "enterprise": {
+        "cpu": [
+          { "cores": 1, "price": 190000 }, { "cores": 2, "price": 380000 }, { "cores": 3, "price": 570000 }, { "cores": 4, "price": 760000 }, { "cores": 5, "price": 950000 }, { "cores": 6, "price": 1140000 }, { "cores": 8, "price": 1520000 }, { "cores": 10, "price": 1900000 }, { "cores": 12, "price": 2280000 }, { "cores": 16, "price": 3040000 }, { "cores": 18, "price": 3420000 }, { "cores": 24, "price": 4560000 }, { "cores": 32, "price": 6080000 }, { "cores": 40, "price": 7600000 }, { "cores": 48, "price": 9120000 }, { "cores": 56, "price": 10640000 }, { "cores": 64, "price": 12160000 }, { "cores": 96, "price": 18240000 }
+        ],
+        "ram": [
+          { "gb": 1, "price": 85000 }, { "gb": 2, "price": 170000 }, { "gb": 3, "price": 255000 }, { "gb": 4, "price": 340000 }, { "gb": 5, "price": 425000 }, { "gb": 6, "price": 510000 }, { "gb": 8, "price": 680000 }, { "gb": 10, "price": 850000 }, { "gb": 12, "price": 1020000 }, { "gb": 16, "price": 1360000 }, { "gb": 20, "price": 1700000 }, { "gb": 24, "price": 2040000 }, { "gb": 32, "price": 2720000 }, { "gb": 48, "price": 4080000 }, { "gb": 64, "price": 5440000 }, { "gb": 96, "price": 8160000 }, { "gb": 128, "price": 10880000 }, { "gb": 192, "price": 16320000 }, { "gb": 256, "price": 21760000 }, { "gb": 512, "price": 43520000 }
+        ],
+        "disk": { "hdd": { "under100GB": 2000, "over100GB": 1000 }, "ssd": { "under100GB": 7000, "over100GB": 4600 }, "nvme": { "under100GB": 10500, "over100GB": 6900 } }
+      },
+      "dedicated": {
+        "cpu": [
+          { "cores": 1, "price": 560000 }, { "cores": 2, "price": 1120000 }, { "cores": 3, "price": 1680000 }, { "cores": 4, "price": 2240000 }, { "cores": 5, "price": 2800000 }, { "cores": 6, "price": 3360000 }, { "cores": 8, "price": 4480000 }, { "cores": 10, "price": 5600000 }, { "cores": 12, "price": 6720000 }, { "cores": 16, "price": 8960000 }, { "cores": 18, "price": 10080000 }, { "cores": 24, "price": 13440000 }, { "cores": 32, "price": 17920000 }
+        ],
+        "ram": [
+           { "gb": 1, "price": 85000 }, { "gb": 2, "price": 170000 }, { "gb": 3, "price": 255000 }, { "gb": 4, "price": 340000 }, { "gb": 5, "price": 425000 }, { "gb": 6, "price": 510000 }, { "gb": 8, "price": 680000 }, { "gb": 10, "price": 850000 }, { "gb": 12, "price": 1020000 }, { "gb": 16, "price": 1360000 }, { "gb": 20, "price": 1700000 }, { "gb": 24, "price": 2040000 }, { "gb": 32, "price": 2720000 }, { "gb": 48, "price": 4080000 }, { "gb": 64, "price": 5440000 }, { "gb": 96, "price": 8160000 }, { "gb": 128, "price": 10880000 }, { "gb": 192, "price": 16320000 }, { "gb": 256, "price": 21760000 }, { "gb": 512, "price": 43520000 }
+        ],
+        "disk": { "hdd": { "under100GB": 2000, "over100GB": 1000 }, "ssd": { "under100GB": 7000, "over100GB": 4600 }, "nvme": { "under100GB": 10500, "over100GB": 6900 } }
+      }
+    },
+    "onDemand": {
+      "premium": {
+        "cpu": [
+          { "cores": 1, "on": 292, "off": 58 }, { "cores": 2, "on": 584, "off": 116 }, { "cores": 3, "on": 876, "off": 174 }, { "cores": 4, "on": 1168, "off": 232 }, { "cores": 6, "on": 1752, "off": 348 }, { "cores": 8, "on": 2336, "off": 464 }, { "cores": 10, "on": 2920, "off": 580 }, { "cores": 12, "on": 3504, "off": 696 }, { "cores": 16, "on": 4672, "off": 928 }, { "cores": 18, "on": 5256, "off": 1044 }, { "cores": 24, "on": 7008, "off": 1392 }, { "cores": 32, "on": 9344, "off": 1856 }
+        ],
+        "ram": [
+          { "gb": 1, "on": 177, "off": 35 }, { "gb": 2, "on": 354, "off": 70 }, { "gb": 3, "on": 531, "off": 105 }, { "gb": 4, "on": 708, "off": 140 }, { "gb": 6, "on": 1062, "off": 210 }, { "gb": 8, "on": 1416, "off": 280 }, { "gb": 10, "on": 1770, "off": 350 }, { "gb": 12, "on": 2124, "off": 420 }, { "gb": 16, "on": 2832, "off": 560 }, { "gb": 20, "on": 3540, "off": 700 }, { "gb": 24, "on": 4248, "off": 840 }, { "gb": 32, "on": 5664, "off": 1120 }, { "gb": 48, "on": 8496, "off": 1680 }, { "gb": 64, "on": 11328, "off": 2240 }, { "gb": 96, "on": 16992, "off": 3360 }, { "gb": 128, "on": 22656, "off": 4480 }
+        ],
+        "disk": { "hdd": { "under100GB": 3.6, "over100GB": 1.8 }, "ssd": { "under100GB": 12.6, "over100GB": 8.3 }, "nvme": { "under100GB": 19, "over100GB": 12.5 } }
+      },
+      "enterprise": {
+        "cpu": [
+          { "cores": 1, "on": 396, "off": 79 }, { "cores": 2, "on": 792, "off": 158 }, { "cores": 3, "on": 1188, "off": 237 }, { "cores": 4, "on": 1584, "off": 316 }, { "cores": 6, "on": 2376, "off": 474 }, { "cores": 8, "on": 3168, "off": 632 }, { "cores": 10, "on": 3960, "off": 790 }, { "cores": 12, "on": 4752, "off": 948 }, { "cores": 16, "on": 6336, "off": 1264 }, { "cores": 18, "on": 7128, "off": 1422 }, { "cores": 24, "on": 9504, "off": 1896 }, { "cores": 32, "on": 12672, "off": 2528 }, { "cores": 40, "on": 15840, "off": 3160 }, { "cores": 48, "on": 19008, "off": 3792 }, { "cores": 56, "on": 22176, "off": 4424 }, { "cores": 64, "on": 25344, "off": 5056 }, { "cores": 96, "on": 38016, "off": 7584 }
+        ],
+        "ram": [
+          { "gb": 1, "on": 177, "off": 35 }, { "gb": 2, "on": 354, "off": 70 }, { "gb": 3, "on": 531, "off": 105 }, { "gb": 4, "on": 708, "off": 140 }, { "gb": 6, "on": 1062, "off": 210 }, { "gb": 8, "on": 1416, "off": 280 }, { "gb": 10, "on": 1770, "off": 350 }, { "gb": 12, "on": 2124, "off": 420 }, { "gb": 16, "on": 2832, "off": 560 }, { "gb": 20, "on": 3540, "off": 700 }, { "gb": 24, "on": 4248, "off": 840 }, { "gb": 32, "on": 5664, "off": 1120 }, { "gb": 48, "on": 8496, "off": 1680 }, { "gb": 64, "on": 11328, "off": 2240 }, { "gb": 96, "on": 16992, "off": 3360 }, { "gb": 128, "on": 22656, "off": 4480 }, { "gb": 192, "on": 33984, "off": 6720 }, { "gb": 256, "on": 45312, "off": 8960 }, { "gb": 512, "on": 90624, "off": 17920 }
+        ],
+        "disk": { "hdd": { "under100GB": 3.6, "over100GB": 1.8 }, "ssd": { "under100GB": 12.6, "over100GB": 8.3 }, "nvme": { "under100GB": 19, "over100GB": 12.5 } }
+      },
+      "dedicated": {
+        "cpu": [
+          { "cores": 1, "on": 1167, "off": 233 }, { "cores": 2, "on": 2334, "off": 466 }, { "cores": 3, "on": 3501, "off": 699 }, { "cores": 4, "on": 4668, "off": 932 }, { "cores": 6, "on": 7002, "off": 1398 }, { "cores": 8, "on": 9336, "off": 1864 }, { "cores": 10, "on": 11670, "off": 2330 }, { "cores": 12, "on": 14004, "off": 2796 }, { "cores": 16, "on": 18672, "off": 3728 }, { "cores": 18, "on": 21006, "off": 4194 }, { "cores": 24, "on": 28008, "off": 5592 }, { "cores": 32, "on": 37344, "off": 7456 }, { "cores": 40, "on": 46680, "off": 9320 }, { "cores": 48, "on": 56016, "off": 11184 }, { "cores": 56, "on": 65352, "off": 13048 }, { "cores": 64, "on": 74688, "off": 14912 }, { "cores": 96, "on": 112032, "off": 22368 }
+        ],
+        "ram": [
+          { "gb": 1, "on": 177, "off": 35 }, { "gb": 2, "on": 354, "off": 70 }, { "gb": 3, "on": 531, "off": 105 }, { "gb": 4, "on": 708, "off": 140 }, { "gb": 6, "on": 1062, "off": 210 }, { "gb": 8, "on": 1416, "off": 280 }, { "gb": 10, "on": 1770, "off": 350 }, { "gb": 12, "on": 2124, "off": 420 }, { "gb": 16, "on": 2832, "off": 560 }, { "gb": 20, "on": 3540, "off": 700 }, { "gb": 24, "on": 4248, "off": 840 }, { "gb": 32, "on": 5664, "off": 1120 }, { "gb": 48, "on": 8496, "off": 1680 }, { "gb": 64, "on": 11328, "off": 2240 }, { "gb": 96, "on": 16992, "off": 3360 }, { "gb": 128, "on": 22656, "off": 4480 }, { "gb": 192, "on": 33984, "off": 6720 }, { "gb": 256, "on": 45312, "off": 8960 }, { "gb": 512, "on": 90624, "off": 17920 }
+        ],
+        "disk": { "hdd": { "under100GB": 3.6, "over100GB": 1.8 }, "ssd": { "under100GB": 12.6, "over100GB": 8.3 }, "nvme": { "under100GB": 19, "over100GB": 12.5 } }
+      }
+    }
+  },
+  "intelGen2": {
+    "tiers": ["basic", "premium", "enterprise", "dedicated"],
+    "subscription": {
+      "basic": {
+        "cpu": [ { "cores": 1, "price": 35000 }, { "cores": 2, "price": 71000 }, { "cores": 3, "price": 125000 }, { "cores": 4, "price": 222000 }, { "cores": 6, "price": 590000 }, { "cores": 8, "price": 850000 }, { "cores": 12, "price": 1600000 } ],
+        "ram": [ { "gb": 1, "price": 60000 }, { "gb": 2, "price": 80000 }, { "gb": 3, "price": 111000 }, { "gb": 4, "price": 246000 }, { "gb": 6, "price": 357000 }, { "gb": 8, "price": 459000 }, { "gb": 12, "price": 679000 }, { "gb": 16, "price": 949000 }, { "gb": 24, "price": 1600000 } ],
+        "disk": {
+          "hdd": { "under100GB": 1091, "over100GB": 818 },
+          "ssd": { "under100GB": 3482, "over100GB": 3482 }
+        }
+      },
+      "premium": {
+        "cpu": [ { "cores": 1, "price": 70102 }, { "cores": 2, "price": 233673 }, { "cores": 3, "price": 373876 }, { "cores": 4, "price": 560815 }, { "cores": 5, "price": 701018 }, { "cores": 6, "price": 841222 }, { "cores": 8, "price": 1215098 }, { "cores": 10, "price": 1729178 }, { "cores": 12, "price": 2243258 }, { "cores": 16, "price": 2991011 }, { "cores": 18, "price": 3364887 }, { "cores": 24, "price": 4486516 }, { "cores": 32, "price": 5982022 } ],
+        "ram": [ { "gb": 1, "price": 117818 }, { "gb": 2, "price": 196364 }, { "gb": 3, "price": 274909 }, { "gb": 4, "price": 353455 }, { "gb": 5, "price": 432000 }, { "gb": 6, "price": 510545 }, { "gb": 8, "price": 667636 }, { "gb": 10, "price": 824727 }, { "gb": 12, "price": 981818 }, { "gb": 16, "price": 1296000 }, { "gb": 20, "price": 1610182 }, { "gb": 24, "price": 1924364 }, { "gb": 32, "price": 2552727 }, { "gb": 48, "price": 3809455 }, { "gb": 64, "price": 5529600 }, { "gb": 96, "price": 7579636 }, { "gb": 128, "price": 10093091 } ],
+        "disk": {
+          "hdd": { "under100GB": 2000, "over100GB": 1000 },
+          "ssd": { "under100GB": 7000, "over100GB": 4600 },
+          "nvme": { "under100GB": 10500, "over100GB": 6900 }
+        }
+      },
+      "enterprise": {
+        "cpu": [ { "cores": 1, "price": 112163 }, { "cores": 2, "price": 373876 }, { "cores": 3, "price": 598202 }, { "cores": 4, "price": 897304 }, { "cores": 5, "price": 1121629 }, { "cores": 6, "price": 1345955 }, { "cores": 8, "price": 1944157 }, { "cores": 10, "price": 2766685 }, { "cores": 12, "price": 3589213 }, { "cores": 16, "price": 4785617 }, { "cores": 18, "price": 5383820 }, { "cores": 24, "price": 7178425 }, { "cores": 32, "price": 9571235 }, { "cores": 40, "price": 13160448 }, { "cores": 48, "price": 15792538 }, { "cores": 56, "price": 18424627 }, { "cores": 64, "price": 21056717 }, { "cores": 96, "price": 31585075 } ],
+        "ram": [ { "gb": 1, "price": 188509 }, { "gb": 2, "price": 314182 }, { "gb": 3, "price": 439855 }, { "gb": 4, "price": 565527 }, { "gb": 5, "price": 691200 }, { "gb": 6, "price": 816873 }, { "gb": 8, "price": 1068218 }, { "gb": 10, "price": 1319564 }, { "gb": 12, "price": 1570909 }, { "gb": 16, "price": 2073600 }, { "gb": 20, "price": 2576291 }, { "gb": 24, "price": 3078982 }, { "gb": 32, "price": 4084364 }, { "gb": 48, "price": 6095127 }, { "gb": 64, "price": 8847360 }, { "gb": 96, "price": 12127418 }, { "gb": 128, "price": 16148945 }, { "gb": 192, "price": 26611200 }, { "gb": 256, "price": 35458560 }, { "gb": 512, "price": 70848000 } ],
+        "disk": {
+          "hdd": { "under100GB": 2000, "over100GB": 1000 },
+          "ssd": { "under100GB": 7000, "over100GB": 4600 },
+          "nvme": { "under100GB": 10500, "over100GB": 6900 }
+        }
+      },
+      "dedicated": {
+        "cpu": [ { "cores": 1, "price": 325000 }, { "cores": 2, "price": 650000 }, { "cores": 3, "price": 975000 }, { "cores": 4, "price": 1300000 }, { "cores": 5, "price": 1625000 }, { "cores": 6, "price": 1950000 }, { "cores": 8, "price": 2600000 }, { "cores": 10, "price": 3250000 }, { "cores": 12, "price": 3900000 }, { "cores": 16, "price": 5200000 }, { "cores": 18, "price": 5850000 }, { "cores": 24, "price": 7800000 }, { "cores": 32, "price": 10400000 } ],
+        "ram": [ { "gb": 1, "price": 140000 }, { "gb": 2, "price": 263529 }, { "gb": 3, "price": 420000 }, { "gb": 4, "price": 510588 }, { "gb": 5, "price": 669118 }, { "gb": 6, "price": 840000 }, { "gb": 8, "price": 1120000 }, { "gb": 10, "price": 1400000 }, { "gb": 12, "price": 1680000 }, { "gb": 16, "price": 2240000 }, { "gb": 20, "price": 2800000 }, { "gb": 24, "price": 3360000 }, { "gb": 32, "price": 4480000 }, { "gb": 48, "price": 6720000 }, { "gb": 64, "price": 8960000 }, { "gb": 96, "price": 13440000 }, { "gb": 128, "price": 17920000 }, { "gb": 192, "price": 26880000 }, { "gb": 256, "price": 36480000 }, { "gb": 512, "price": 71680000 } ],
+        "disk": {
+          "hdd": { "under100GB": 2000, "over100GB": 1000 },
+          "ssd": { "under100GB": 7000, "over100GB": 4600 },
+          "nvme": { "under100GB": 10500, "over100GB": 6900 }
+        }
+      }
+    },
+    "onDemand": {
+      "basic": {
+        "cpu": [ { "cores": 1, "on": 75, "off": 15 }, { "cores": 2, "on": 150, "off": 30 }, { "cores": 3, "on": 263, "off": 53 }, { "cores": 4, "on": 465, "off": 93 }, { "cores": 6, "on": 1230, "off": 246 }, { "cores": 8, "on": 1785, "off": 357 }, { "cores": 12, "on": 3330, "off": 666 } ],
+        "ram": [ { "gb": 1, "on": 128, "off": 26 }, { "gb": 2, "on": 165, "off": 33 }, { "gb": 3, "on": 233, "off": 47 }, { "gb": 4, "on": 518, "off": 104 }, { "gb": 6, "on": 750, "off": 150 }, { "gb": 8, "on": 960, "off": 192 }, { "gb": 12, "on": 1410, "off": 282 }, { "gb": 16, "on": 1980, "off": 396 }, { "gb": 24, "on": 3300, "off": 660 } ],
+        "disk": {
+          "hdd": { "under100GB": 2.0, "over100GB": 1.4 },
+          "ssd": { "under100GB": 6.2, "over100GB": 8.3 }
+        }
+      },
+      "premium": {
+        "cpu": [ { "cores": 1, "on": 150, "off": 30 }, { "cores": 2, "on": 488, "off": 98 }, { "cores": 3, "on": 780, "off": 156 }, { "cores": 4, "on": 1170, "off": 234 }, { "cores": 6, "on": 1755, "off": 351 }, { "cores": 8, "on": 2535, "off": 507 }, { "cores": 10, "on": 3600, "off": 720 }, { "cores": 12, "on": 4680, "off": 936 }, { "cores": 16, "on": 6225, "off": 1245 }, { "cores": 18, "on": 7020, "off": 1404 }, { "cores": 24, "on": 9360, "off": 1872 }, { "cores": 32, "on": 12465, "off": 2493 } ],
+        "ram": [ { "gb": 1, "on": 248, "off": 50 }, { "gb": 2, "on": 405, "off": 81 }, { "gb": 3, "on": 570, "off": 114 }, { "gb": 4, "on": 735, "off": 147 }, { "gb": 6, "on": 1065, "off": 213 }, { "gb": 8, "on": 1395, "off": 279 }, { "gb": 10, "on": 1725, "off": 345 }, { "gb": 12, "on": 2040, "off": 408 }, { "gb": 16, "on": 2700, "off": 540 }, { "gb": 20, "on": 3360, "off": 672 }, { "gb": 24, "on": 4020, "off": 804 }, { "gb": 32, "on": 5325, "off": 1065 }, { "gb": 48, "on": 7935, "off": 1587 }, { "gb": 64, "on": 11520, "off": 2304 }, { "gb": 96, "on": 15795, "off": 3159 }, { "gb": 128, "on": 21150, "off": 4230 } ],
+        "disk": {
+          "hdd": { "under100GB": 3.6, "over100GB": 1.8 },
+          "ssd": { "under100GB": 12.6, "over100GB": 8.3 },
+          "nvme": { "under100GB": 19.0, "over100GB": 12.5 }
+        }
+      },
+      "enterprise": {
+        "cpu": [ { "cores": 1, "on": 233, "off": 47 }, { "cores": 2, "on": 780, "off": 156 }, { "cores": 3, "on": 1245, "off": 249 }, { "cores": 4, "on": 1868, "off": 374 }, { "cores": 6, "on": 2805, "off": 561 }, { "cores": 8, "on": 4050, "off": 810 }, { "cores": 10, "on": 5760, "off": 1152 }, { "cores": 12, "on": 7485, "off": 1497 }, { "cores": 16, "on": 9975, "off": 1995 }, { "cores": 18, "on": 11220, "off": 2244 }, { "cores": 24, "on": 14955, "off": 2991 }, { "cores": 32, "on": 19935, "off": 3987 }, { "cores": 40, "on": 27420, "off": 5484 }, { "cores": 48, "on": 32910, "off": 6582 }, { "cores": 56, "on": 38385, "off": 7677 }, { "cores": 64, "on": 43868, "off": 8774 }, { "cores": 96, "on": 65805, "off": 13161 } ],
+        "ram": [ { "gb": 1, "on": 398, "off": 80 }, { "gb": 2, "on": 660, "off": 132 }, { "gb": 3, "on": 930, "off": 186 }, { "gb": 4, "on": 1185, "off": 237 }, { "gb": 6, "on": 1703, "off": 341 }, { "gb": 8, "on": 2228, "off": 446 }, { "gb": 10, "on": 2753, "off": 551 }, { "gb": 12, "on": 3270, "off": 654 }, { "gb": 16, "on": 4320, "off": 864 }, { "gb": 20, "on": 5370, "off": 1074 }, { "gb": 24, "on": 6420, "off": 1284 }, { "gb": 32, "on": 8520, "off": 1704 }, { "gb": 48, "on": 12698, "off": 2540 }, { "gb": 64, "on": 18435, "off": 3687 }, { "gb": 96, "on": 25268, "off": 5054 }, { "gb": 128, "on": 33645, "off": 6729 }, { "gb": 192, "on": 55440, "off": 11088 }, { "gb": 256, "on": 73875, "off": 14775 }, { "gb": 512, "on": 147600, "off": 29520 } ],
+        "disk": {
+          "hdd": { "under100GB": 3.6, "over100GB": 1.8 },
+          "ssd": { "under100GB": 12.6, "over100GB": 8.3 },
+          "nvme": { "under100GB": 19.0, "over100GB": 12.5 }
+        }
+      },
+      "dedicated": {
+        "cpu": [ { "cores": 1, "on": 675, "off": 135 }, { "cores": 2, "on": 1350, "off": 270 }, { "cores": 3, "on": 2033, "off": 407 }, { "cores": 4, "on": 2715, "off": 543 }, { "cores": 6, "on": 4065, "off": 813 }, { "cores": 8, "on": 5415, "off": 1083 }, { "cores": 10, "on": 6780, "off": 1356 }, { "cores": 12, "on": 8130, "off": 1626 }, { "cores": 16, "on": 10830, "off": 2166 }, { "cores": 18, "on": 12195, "off": 2439 }, { "cores": 24, "on": 16260, "off": 3252 }, { "cores": 32, "on": 21668, "off": 4334 }, { "cores": 40, "on": 27083, "off": 5417 }, { "cores": 48, "on": 32505, "off": 6501 }, { "cores": 56, "on": 37920, "off": 7584 }, { "cores": 64, "on": 43335, "off": 8667 }, { "cores": 96, "on": 65010, "off": 13002 } ],
+        "ram": [ { "gb": 1, "on": 293, "off": 59 }, { "gb": 2, "on": 548, "off": 110 }, { "gb": 3, "on": 878, "off": 176 }, { "gb": 4, "on": 1065, "off": 213 }, { "gb": 6, "on": 1755, "off": 351 }, { "gb": 8, "on": 2340, "off": 468 }, { "gb": 10, "on": 2918, "off": 584 }, { "gb": 12, "on": 3503, "off": 701 }, { "gb": 16, "on": 4665, "off": 933 }, { "gb": 20, "on": 5835, "off": 1167 }, { "gb": 24, "on": 7005, "off": 1401 }, { "gb": 32, "on": 9338, "off": 1868 }, { "gb": 48, "on": 14003, "off": 2801 }, { "gb": 64, "on": 18668, "off": 3734 }, { "gb": 96, "on": 28005, "off": 5601 }, { "gb": 128, "on": 37335, "off": 7467 }, { "gb": 192, "on": 56003, "off": 11201 }, { "gb": 256, "on": 74670, "off": 14934 }, { "gb": 512, "on": 149333, "off": 29867 } ],
+        "disk": {
+          "hdd": { "under100GB": 3.6, "over100GB": 1.8 },
+          "ssd": { "under100GB": 12.6, "over100GB": 8.3 },
+          "nvme": { "under100GB": 19.0, "over100GB": 12.5 }
+        }
+      }
+    }
+  }
+}

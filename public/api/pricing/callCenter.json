@@ -1,0 +1,9 @@
+{
+  "packages": [
+    { "name": "V10", "details": "10 extensions, 5GB storage, 2 numbers", "price": 300000 },
+    { "name": "V20", "details": "20 extensions, 10GB storage, 3 numbers", "price": 500000 },
+    { "name": "V30", "details": "30 extensions, 15GB storage, 4 numbers", "price": 750000 },
+    { "name": "V50", "details": "50 extensions, 25GB storage, 5 numbers", "price": 1200000 },
+    { "name": "V100", "details": "100 extensions, 50GB storage, 7 numbers", "price": 2200000 }
+  ]
+}

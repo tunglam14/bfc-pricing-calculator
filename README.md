@@ -6,7 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/drive/19ZI3mOnBGegXYI40LDAslHPBOpsg6IyF
+View your app in AI Studio: https://ai.studio/apps/drive/1ReN1g15x2Wes6Qv8H-9etZJR7Ae9IsaL
 
 ## Run Locally
 
@@ -18,3 +18,22 @@ View your app in AI Studio: https://ai.studio/apps/drive/19ZI3mOnBGegXYI40LDAslH
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Test
+
+# Chạy test với server mặc định (localhost:3000)
+npm run test:api
+
+# Hoặc chạy trực tiếp
+node test-api.js
+
+# Hoặc chỉ định API URL khác
+API_URL=http://localhost:3000 node test-api.js
+
+Tính năng:
+
+- Chạy tất cả test cases tự động
+- So sánh kết quả với giá trị kỳ vọng (tolerance: ±100 VNĐ)
+- Hiển thị chi tiết request/response
+- Tóm tắt kết quả (passed/failed)
+- Màu sắc rõ ràng (✅/❌)

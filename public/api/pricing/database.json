@@ -1,0 +1,65 @@
+{
+  "hoursPerMonth": 720,
+  "cpu": {
+    "premium": [
+      { "cores": 1, "price": 140 },
+      { "cores": 2, "price": 490 },
+      { "cores": 4, "price": 1160 },
+      { "cores": 6, "price": 1750 },
+      { "cores": 8, "price": 2530 },
+      { "cores": 16, "price": 6240 }
+    ],
+    "enterprise": [
+      { "cores": 1, "price": 220 },
+      { "cores": 2, "price": 780 },
+      { "cores": 4, "price": 1870 },
+      { "cores": 6, "price": 2800 },
+      { "cores": 8, "price": 4060 },
+      { "cores": 16, "price": 9980 }
+    ],
+    "dedicated": [
+      { "cores": 1, "price": 680 },
+      { "cores": 2, "price": 1350 },
+      { "cores": 4, "price": 2700 },
+      { "cores": 6, "price": 4070 },
+      { "cores": 8, "price": 5420 },
+      { "cores": 16, "price": 10840 }
+    ]
+  },
+  "ram": {
+    "premium": [
+      { "gb": 1, "price": 250 },
+      { "gb": 2, "price": 410 },
+      { "gb": 4, "price": 740 },
+      { "gb": 8, "price": 1390 },
+      { "gb": 16, "price": 2700 },
+      { "gb": 32, "price": 5320 },
+      { "gb": 64, "price": 11520 }
+    ],
+    "enterprise": [
+      { "gb": 1, "price": 400 },
+      { "gb": 2, "price": 660 },
+      { "gb": 4, "price": 1170 },
+      { "gb": 8, "price": 2220 },
+      { "gb": 16, "price": 4320 },
+      { "gb": 32, "price": 8510 },
+      { "gb": 64, "price": 18430 }
+    ],
+    "dedicated": [
+      { "gb": 1, "price": 300 },
+      { "gb": 2, "price": 550 },
+      { "gb": 4, "price": 1060 },
+      { "gb": 8, "price": 2330 },
+      { "gb": 16, "price": 4670 },
+      { "gb": 32, "price": 9340 },
+      { "gb": 64, "price": 18660 }
+    ]
+  },
+  "disk": {
+    "pricePerGBHourFirst100GB": 10,
+    "pricePerGBHourAfter100GB": 7
+  },
+  "backup": {
+    "pricePerGBHour": 2.2
+  }
+}

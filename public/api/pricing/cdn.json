@@ -1,0 +1,17 @@
+{
+  "minGB": 200,
+  "minPrice": 100000,
+  "tiers": [
+    { "maxGB": 5120, "pricePerGB": 500 },
+    { "maxGB": 10240, "pricePerGB": 475 },
+    { "maxGB": 51200, "pricePerGB": 450 },
+    { "maxGB": 102400, "pricePerGB": 425 },
+    { "maxGB": 204800, "pricePerGB": 400 },
+    { "maxGB": 307200, "pricePerGB": 375 },
+    { "maxGB": 409600, "pricePerGB": 350 },
+    { "maxGB": 512000, "pricePerGB": 325 },
+    { "maxGB": 819200, "pricePerGB": 300 },
+    { "maxGB": 1024000, "pricePerGB": 290 },
+    { "maxGB": null, "pricePerGB": 260 }
+  ]
+}

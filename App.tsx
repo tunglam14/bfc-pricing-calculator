@@ -21,6 +21,7 @@ import CustomImageCalculator from './components/calculators/CustomImageCalculato
 import CdnCalculator from './components/calculators/CdnCalculator';
 import VpnCalculator from './components/calculators/VpnCalculator';
 import WafCalculator from './components/calculators/WafCalculator';
+import ApiDocs from './components/ApiDocs';
 import type { EstimateItem, Service, ServiceId } from './types';
 import { useLanguage } from './i18n/LanguageContext';
 import { usePricing } from './contexts/PricingContext';
@@ -59,6 +60,7 @@ const App: React.FC = () => {
   const [estimateItems, setEstimateItems] = useState<EstimateItem[]>([]);
   const [billingCycle, setBillingCycle] = useState<number>(1);
   const [discount, setDiscount] = useState<number>(0);
+  const [showApiDocs, setShowApiDocs] = useState(false);
 
   useEffect(() => {
     if (billingCycle === 1) {
@@ -138,45 +140,49 @@ const App: React.FC = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen font-sans">
-      <Header />
+      <Header onToggleDocs={() => setShowApiDocs(!showApiDocs)} isDocsVisible={showApiDocs} />
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
-          <div className="w-full lg:w-2/3 xl:w-3/4 space-y-8">
-            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg">
-                <h2 className="text-xl font-bold text-gray-800 mb-4">{t('services.select_service')}</h2>
-                <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
-                    {services.map(service => (
-                        <button
-                            key={service.id}
-                            onClick={() => handleServiceClick(service.id)}
-                            className={`p-4 rounded-lg text-center transition-all duration-200 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 cta-bfc-pc-${service.id.toLowerCase()} ${
-                                activeService === service.id
-                                ? 'bg-blue-700 text-white shadow-md' 
-                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                            }`}
-                        >
-                            <div className={`transition-colors duration-200 ${activeService === service.id ? 'text-white' : 'text-blue-700'}`}>
-                                {service.icon}
-                            </div>
-                            <span className="text-sm font-semibold block">{service.name}</span>
-                        </button>
-                    ))}
-                </div>
+        {showApiDocs ? (
+          <ApiDocs />
+        ) : (
+          <div className="flex flex-col lg:flex-row gap-8 items-start">
+            <div className="w-full lg:w-2/3 xl:w-3/4 space-y-8">
+              <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg">
+                  <h2 className="text-xl font-bold text-gray-800 mb-4">{t('services.select_service')}</h2>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
+                      {services.map(service => (
+                          <button
+                              key={service.id}
+                              onClick={() => handleServiceClick(service.id)}
+                              className={`p-4 rounded-lg text-center transition-all duration-200 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 cta-bfc-pc-${service.id.toLowerCase()} ${
+                                  activeService === service.id
+                                  ? 'bg-blue-700 text-white shadow-md' 
+                                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                              }`}
+                          >
+                              <div className={`transition-colors duration-200 ${activeService === service.id ? 'text-white' : 'text-blue-700'}`}>
+                                  {service.icon}
+                              </div>
+                              <span className="text-sm font-semibold block">{service.name}</span>
+                          </button>
+                      ))}
+                  </div>
+              </div>
+              
+              {activeCalculator}
             </div>
             
-            {activeCalculator}
+            <CostSummary
+              items={estimateItems}
+              onRemoveItem={handleRemoveItem}
+              onClearAll={handleClearAll}
+              billingCycle={billingCycle}
+              onBillingCycleChange={setBillingCycle}
+              discount={discount}
+              onDiscountChange={setDiscount}
+            />
           </div>
-          
-          <CostSummary
-            items={estimateItems}
-            onRemoveItem={handleRemoveItem}
-            onClearAll={handleClearAll}
-            billingCycle={billingCycle}
-            onBillingCycleChange={setBillingCycle}
-            discount={discount}
-            onDiscountChange={setDiscount}
-          />
-        </div>
+        )}
       </main>
     </div>
   );
