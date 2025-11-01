@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "vite build && tsc -p tsconfig.server.json",
+    "build": "npx vite build && npx tsc -p tsconfig.server.json",
     "start": "NODE_ENV=production node dist-server/server.js",
-    "preview": "vite preview",
+    "preview": "npx vite preview",
     "test:api": "node test-api.js"
   },
   "dependencies": {

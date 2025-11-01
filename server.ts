@@ -11,7 +11,10 @@ const isProd = process.env.NODE_ENV === 'production';
 
 // Helper function to load all pricing JSON files
 async function loadAllPricingData(): Promise<PricingData> {
-  const pricingDir = path.resolve(__dirname, isProd ? 'dist/api/pricing' : 'public/api/pricing');
+  // In production, __dirname is dist-server/, so we need to go up one level to find dist/
+  const pricingDir = isProd 
+    ? path.resolve(__dirname, '..', 'dist', 'api', 'pricing')
+    : path.resolve(__dirname, 'public', 'api', 'pricing');
   const files = await fs.readdir(pricingDir);
   const pricingData: Partial<PricingData> = {};
   for (const file of files) {
@@ -34,7 +37,8 @@ async function createTFunction(vite?: any): Promise<(key: string) => string> {
         translations = { en: enModule };
     } else {
         // In prod, read from file system
-        const enPath = path.resolve(__dirname, 'dist/i18n/en.json');
+        // In production, __dirname is dist-server/, so we need to go up one level to find dist/
+        const enPath = path.resolve(__dirname, '..', 'dist', 'i18n', 'en.json');
         const enContent = await fs.readFile(enPath, 'utf-8');
         translations = { en: JSON.parse(enContent) };
     }
@@ -112,13 +116,14 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     // In production, serve built files
-    app.use(express.static(path.resolve(__dirname, 'dist')));
+    // In production, __dirname is dist-server/, so we need to go up one level to find dist/
+    app.use(express.static(path.resolve(__dirname, '..', 'dist')));
   }
 
   // For production, serve index.html for any other route
   if (isProd) {
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+        res.sendFile(path.resolve(__dirname, '..', 'dist', 'index.html'));
     });
   }
 

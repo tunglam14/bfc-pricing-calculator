@@ -12,6 +12,17 @@
     "allowSyntheticDefaultImports": true,
     "noEmit": false
   },
-  "include": ["server.ts", "services/**/*.ts", "types.ts", "contexts/PricingContext.tsx"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["server.ts", "services/calculationService.ts", "types.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "dist-server",
+    "services/csvService.ts",
+    "services/pdfService.ts",
+    "services/geminiService.ts",
+    "contexts/**/*",
+    "components/**/*",
+    "i18n/**/*",
+    "*.tsx"
+  ]
 }
