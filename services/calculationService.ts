@@ -151,7 +151,9 @@ function calculateCloudServer(options: any, pricing: PricingData): number {
   if(externalTierPricing) {
     for (const disk of externalDisks) {
         const extDiskSizeNum = parseInt(String(disk.diskSize), 10) || 10;
-        const extDiskQuantityNum = parseInt(String(disk.quantity), 10) || 1;
+        const extDiskQuantityNum = parseInt(String(disk.quantity), 10) || 0;
+        // Skip disk if quantity is 0 or invalid
+        if (extDiskQuantityNum <= 0) continue;
         const diskPricing = externalTierPricing[disk.diskType];
         if (diskPricing) {
             let singleDiskCost = (extDiskSizeNum <= 100)

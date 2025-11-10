@@ -137,7 +137,9 @@ const CloudServerCalculator: React.FC<CloudServerCalculatorProps> = ({ onAddItem
 
     for (const disk of externalDisks) {
       const extDiskSizeNum = parseInt(disk.diskSize, 10) || 10;
-      const extDiskQuantityNum = parseInt(disk.quantity, 10) || 1;
+      const extDiskQuantityNum = parseInt(disk.quantity, 10) || 0;
+      // Skip disk if quantity is 0 or invalid
+      if (extDiskQuantityNum <= 0) continue;
       
       const diskPricing = externalTierPricing?.[disk.diskType as keyof typeof externalTierPricing];
 
